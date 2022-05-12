@@ -4,7 +4,7 @@
 
 <img src="https://user-images.githubusercontent.com/88313282/168066652-15097823-6b0e-40b2-b78f-c6d23661764f.png" width="700 " height="400">
 
-Sementic Segmentation 및 Instance Segmentation을 하는 과정에서 논문에서 제시하는 Discriminative Loss Function을 이용하여 모델을 학습하고 추론했을 때의 성능을 측정하는 연구를 진행합니다. 따라서 모든 Segmentation에서 Discriminative Loss를 사용할 수 있게 됩니다. 이 프로젝트를 진행하기 위해서 사용한 Network는 LaneNet이며, backbone에 ResNet을 부착하였고 Instance Segmentation을 통해 Lane Detection을 진행하도록 설계하였습니다. 
+Sementic Segmentation 및 Instance Segmentation을 하는 과정에서 논문에서 제시하는 Discriminative Loss Function을 이용하여 모델을 학습하고 추론했을 때의 성능을 측정하는 연구를 진행합니다. 따라서 모든 Segmentation에서 Discriminative Loss를 사용할 수 있게 됩니다. 이 프로젝트를 진행하기 위해서 사용한 Network는 LaneNet+FCN이며, backbone에 ResNet을 부착하였고 Instance Segmentation을 통해 Lane Detection을 진행하도록 설계하였습니다. 
 * Segmentation을 위한 베이스라인 모델 -> https://github.com/harryhan618/LaneNet
 
 ## Data Preperation
@@ -51,4 +51,4 @@ python test.py --data_dir /{path for test_set}
 
 |Architecture|Accuracy|FP|FN|FPS|
 |-|-|-|-|-|
-|Lane + Res18|0.940|0.142|0.085|15.6|
+|Lane + FCN + Res18|0.940|0.142|0.085|15.6|
