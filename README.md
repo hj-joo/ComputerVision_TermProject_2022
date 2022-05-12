@@ -52,3 +52,6 @@ python test.py --data_dir /{path for test_set}
 |Architecture|Accuracy|FP|FN|FPS|
 |-|-|-|-|-|
 |Lane + FCN + Res18|0.940|0.142|0.085|15.6|
+
+### 구현 발표 영상
+https://www.youtube.com/watch?v=4irjVo88I30
